@@ -3,8 +3,8 @@ on:
   # Comment out workflow_dispatch and uncomment the schedule to run daily
   workflow_dispatch:
   schedule:
-   # - cron: "51 13 * * *" # I was messing with the original cron job before I said 'fuck it' and set it to every 5 min
-   - cron: "*/5 * * * *"
+   - cron: "0 16 * * *" 
+   # - cron: "*/5 * * * *"
 
 jobs:
   # On some job, do some stuff and persist variables meant to be re-used in other jobs
